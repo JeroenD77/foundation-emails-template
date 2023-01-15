@@ -16,27 +16,30 @@
 // 1. Global
 // ---------
 
-$primary-color: #2199e8;
-$secondary-color: #777777;
+$primary-color: #EB3754;
+$secondary-color: #FFD9D0;
+$tertiary-color: #770031;
 $success-color: #3adb76;
 $warning-color: #ffae00;
 $alert-color: #ec5840;
-$light-gray: #f3f3f3;
+$light-gray: #F1EEF3;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 $white: #fefefe;
 $pre-color: #ff6908;
-$global-width: 580px;
+$global-width: 800px;
 $global-width-small: 95%;
 $global-gutter: 16px;
 $body-background: $light-gray;
 $container-background: $white;
 $global-padding: 16px;
 $global-margin: 16px;
-$global-radius: 3px;
-$global-rounded: 500px;
+$global-radius: 16px;
+$global-rounded: 8px;
 $global-breakpoint: $global-width + $global-gutter;
+$global-image: 8px;
+
 
 // 2. Grid
 // -------
@@ -44,6 +47,8 @@ $global-breakpoint: $global-width + $global-gutter;
 $grid-column-count: 12;
 $column-padding-bottom: $global-padding;
 $container-radius: 0;
+$display: grid;
+$grid-template-columns: repeat (12, 1 fr);
 
 // 3. Block Grid
 // -------------
@@ -58,7 +63,7 @@ $global-font-color: $black;
 $body-font-family: Helvetica, Arial, sans-serif;
 $global-font-weight: normal;
 $header-color: inherit;
-$global-line-height: 1.3;
+$global-line-height: 1.5;
 $global-font-size: 16px;
 $body-line-height: $global-line-height;
 $header-font-family: $body-font-family;
@@ -75,7 +80,7 @@ $small-font-size: 80%;
 $small-font-color: $medium-gray;
 $lead-font-size: $global-font-size * 1.25;
 $lead-line-height: 1.6;
-$text-padding: 10px;
+$text-padding: 32px;
 $subheader-lineheight: 1.4;
 $subheader-color: $dark-gray;
 $subheader-font-weight: $global-font-weight;
@@ -111,7 +116,7 @@ $button-color-alt: $medium-gray;
 $button-font-weight: bold;
 $button-margin: 0 0 $global-margin 0;
 $button-background: $primary-color;
-$button-border: 2px solid $button-background;
+$button-border: 2px solid $secondary-color;
 $button-radius: $global-radius;
 $button-rounded: $global-rounded;
 
@@ -144,3 +149,7 @@ $thumbnail-shadow: 0 0 0 1px rgba($black, 0.2);
 $thumbnail-shadow-hover: 0 0 6px 1px rgba($primary-color, 0.5);
 $thumbnail-transition: box-shadow 200ms ease-out;
 $thumbnail-radius: $global-radius;
+
+
+
+
